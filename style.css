@@ -1,0 +1,293 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Noto Sans";
+    background: whitesmoke;
+    color: #09153e;
+    font-size: 1rem;
+}
+
+body.dark-theme {
+    background: #040918;
+    color: white;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+main {
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 3px 10px -5px #0000008b;
+}
+
+.dark-theme .header {
+    background: #1f2535;
+}
+
+.logo {
+    width: 230px;
+}
+
+.btn-theme {
+    background: whitesmoke;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 10px;
+    border: none;
+}
+
+.dark-theme .btn-theme {
+    background: #2f354b;
+}
+
+.btn-theme img {
+    width: 30px;
+}
+
+.extensions {
+    margin-top: 2rem;
+}
+
+.extensions-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.extensions-header h1 {
+    font-size: 2.5rem;
+}
+
+.filter-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.btn-filter {
+    background: white;
+    border: 1px solid #8484848b;
+    color: #09153e;
+    border-radius: 35px;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+}
+
+.dark-theme .btn-filter {
+    background: #1f2535;
+    border-color: #525868;
+    color: white;
+}
+
+.btn-filter-active {
+    background-color: #c30000;
+    color: white;
+}
+
+.dark-theme .btn-filter-active {
+    background-color: #c30000;
+    border-color: #c30000;
+}
+
+.extensions-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.extension-card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 3px 10px -5px #0000008b;
+    gap: 2rem;
+    padding: 1.5rem;
+}
+
+.dark-theme .extension-card {
+    background-color: #1f2535;
+    box-shadow: 0 3px 10px -5px #000000;
+}
+
+.card-info {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.card-logo {
+    width: 180px;
+}
+
+.card-info h2 {
+    font-size: 2rem;
+    margin-bottom: 0.25rem;
+}
+
+.card-info p {
+    font-size: 1.25rem;
+    color: #747474;
+}
+
+.dark-theme .card-info p {
+    color: #c7c7c7;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-remove {
+    background: transparent;
+    border: 1px solid #747474;
+    border-radius: 35px;
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+}
+
+.dark-theme .btn-remove {
+    color: white;
+    border-color: #747b8c;
+}
+
+.toggle {
+    position: relative;
+    width: 60px;
+    height: 30px;
+    border: none;
+    border-radius: 35px;
+    background: #c7c7c7;
+}
+
+.toggle::before {
+    content: "";
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    top: 10%;
+    left: 7%;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.toggle-active {
+    background-color: #c30000;
+}
+
+.toggle-active::before {
+    transform: translateX(20px);
+}
+
+button:focus-visible {
+    outline: 2px solid #c30000;
+    outline-offset: 2px;
+}
+
+@media (min-width: 900px) {
+    main {
+        padding: 3rem 7rem;
+    }
+
+    .header {
+        padding: 0.5rem;
+    }
+
+    .logo {
+        width: 150px;
+    }
+
+    .btn-theme {
+        padding: 0.5rem;
+    }
+
+    .btn-theme img {
+        width: 20px;
+    }
+
+    .extensions {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .extensions-header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .extensions-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .filter-buttons {
+        margin: 0;
+    }
+
+    .btn-filter {
+        padding: 0.25rem 0.75rem;
+        font-size: 0.75rem;
+    }
+
+    .extensions-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .extension-card {
+        padding: 1rem;
+    }
+
+    .card-info img {
+        width: 50px;
+    }
+
+    .card-info h2 {
+        font-size: 1.5rem;
+    }
+
+    .card-info p {
+        font-size: 0.75rem;
+    }
+
+    .btn-remove {
+        font-size: 0.75rem;
+        padding: 0.25rem 0.75rem;
+    }
+
+    .toggle {
+        width: 40px;
+        height: 20px;
+    }
+
+    .toggle::before {
+        width: 15px;
+        height: 15px;
+    }
+}

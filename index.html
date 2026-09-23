@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+
+  <title>Frontend Mentor | Browser extensions manager UI</title>
+</head>
+<body>
+  <main>
+    <header class="header">
+      <img src="./assets/images/logo.svg" class="logo">
+
+      <button class="btn-theme">
+        <img src="./assets/images/icon-moon.svg" alt="">
+      </button>
+    </header>
+
+    <section class="extensions">
+      <div class="extensions-header">
+        <h1>Extensions List</h1>
+        <div class="filter-buttons">
+          <button class="btn-filter btn-filter-active">All</button>
+          <button class="btn-filter">Active</button>
+          <button class="btn-filter">Inactive</button>
+        </div>
+      </div>
+
+      <div class="extensions-list">
+        <article class="extension-card">
+          <div class="card-info">
+            <img src="./assets/images/logo-devlens.svg" alt="" class="card-logo">
+            <div>
+              <h2>DevLens</h2>
+              <p>Quickly inspect page layouts and visualize element boundaries.</p>
+            </div>
+          </div>
+
+          <div class="card-footer">
+            <button class="btn-remove">Remove</button>
+            <button class="toggle"></button>
+          </div>
+        </article>
+
+        <article class="extension-card">
+          <div class="card-info">
+            <img src="./assets/images/logo-style-spy.svg" alt="" class="card-logo">
+            <div>
+              <h2>StyleSpy</h2>
+              <p>Instantly analyze and copy CSS from any webpage element.</p>
+            </div>
+          </div>
+
+          <div class="card-footer">
+            <button class="btn-remove">Remove</button>
+            <button class="toggle"></button>
+          </div>
+        </article>
+
+        <article class="extension-card">
+          <div class="card-info">
+            <img src="./assets/images/logo-speed-boost.svg" alt="" class="card-logo">
+            <div>
+              <h2>SpeedBoost</h2>
+              <p>Optimizes browser resource usage to accelerate page loading.</p>
+            </div>
+          </div>
+
+          <div class="card-footer">
+            <button class="btn-remove">Remove</button>
+            <button class="toggle"></button>
+          </div>
+        </article>
+
+        <article class="extension-card">
+          <div class="card-info">
+            <img src="./assets/images/logo-json-wizard.svg" alt="" class="card-logo">
+            <div>
+              <h2>JSONWizard</h2>
+              <p>Formats, validates, and prettifies JSON responses in-browser.</p>
+            </div>
+          </div>
+
+          <div class="card-footer">
+            <button class="btn-remove">Remove</button>
+            <button class="toggle"></button>
+          </div>
+        </article>
+
+        <article class="extension-card">
+          <div class="card-info">
+            <img src="./assets/images/logo-tab-master-pro.svg" alt="" class="card-logo">
+            <div>
+              <h2>TabMaster Pro</h2>
+              <p>Organizes browser tabs into groups and sessions.</p>
+            </div>
+          </div>
+
+          <div class="card-footer">
+            <button class="btn-remove">Remove</button>
+            <button class="toggle"></button>
+          </div>
+        </article>
+
+        <article class="extension-card">
+          <div class="card-info">
+            <img src="./assets/images/logo-viewport-buddy.svg" alt="" class="card-logo">
+            <div>
+              <h2>ViewportBuddy</h2>
+              <p>Simulates various screen resolutions directly within the browser.</p>
+            </div>
+          </div>
+
+          <div class="card-footer">
+            <button class="btn-remove">Remove</button>
+            <button class="toggle"></button>
+          </div>
+        </article>
+
+        <article class="extension-card">
+          <div class="card-info">
+            <img src="./assets/images/logo-markup-notes.svg" alt="" class="card-logo">
+            <div>
+              <h2>Markup Notes</h2>
+              <p>Enables annotation and notes directly onto webpages for collaborative debugging.</p>
+            </div>
+          </div>
+
+          <div class="card-footer">
+            <button class="btn-remove">Remove</button>
+            <button class="toggle"></button>
+          </div>
+        </article>
+
+        <article class="extension-card">
+          <div class="card-info">
+            <img src="./assets/images/logo-grid-guides.svg" alt="" class="card-logo">
+            <div>
+              <h2>GridGuides</h2>
+              <p>Overlay customizable grids and alignment guides on any webpage.</p>
+            </div>
+          </div>
+
+          <div class="card-footer">
+            <button class="btn-remove">Remove</button>
+            <button class="toggle"></button>
+          </div>
+        </article>
+
+        <article class="extension-card">
+          <div class="card-info">
+            <img src="./assets/images/logo-palette-picker.svg" alt="" class="card-logo">
+            <div>
+              <h2>Palette Picker</h2>
+              <p>Instantly extracts color palettes from any webpage.</p>
+            </div>
+          </div>
+
+          <div class="card-footer">
+            <button class="btn-remove">Remove</button>
+            <button class="toggle"></button>
+          </div>
+        </article>
+
+        <article class="extension-card">
+          <div class="card-info">
+            <img src="./assets/images/logo-link-checker.svg" alt="" class="card-logo">
+            <div>
+              <h2>LinkChecker</h2>
+              <p>Scans and highlights broken links on any page.</p>
+            </div>
+          </div>
+
+          <div class="card-footer">
+            <button class="btn-remove">Remove</button>
+            <button class="toggle"></button>
+          </div>
+        </article>
+
+        <article class="extension-card">
+          <div class="card-info">
+            <img src="./assets/images/logo-dom-snapshot.svg" alt="" class="card-logo">
+            <div>
+              <h2>DOM Snapshot</h2>
+              <p>Capture and export DOM structures quickly.</p>
+            </div>
+          </div>
+
+          <div class="card-footer">
+            <button class="btn-remove">Remove</button>
+            <button class="toggle"></button>
+          </div>
+        </article>
+
+        <article class="extension-card">
+          <div class="card-info">
+            <img src="./assets/images/logo-console-plus.svg" alt="" class="card-logo">
+            <div>
+              <h2>ConsolePlus</h2>
+              <p>Enhanced developer console with advanced filtering and logging.</p>
+            </div>
+          </div>
+
+          <div class="card-footer">
+            <button class="btn-remove">Remove</button>
+            <button class="toggle"></button>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+  <script>
+    const btnTheme = document.querySelector('.btn-theme');
+    const iconTheme = document.querySelector('.btn-theme img');
+    const btnsFilter = document.querySelectorAll('.btn-filter');
+    const cards = document.querySelectorAll('.extension-card');
+    const btnsRemove = document.querySelectorAll('.btn-remove');
+    const toggles = document.querySelectorAll('.toggle');
+    let currentFilter = 'All';
+
+    btnTheme.addEventListener('click', function() {
+      document.body.classList.toggle('dark-theme');
+      if (document.body.classList.contains('dark-theme')) {
+        iconTheme.src = './assets/images/icon-sun.svg';
+      }
+      else {
+        iconTheme.src = './assets/images/icon-moon.svg';
+      }
+    });
+
+    function showCards() {
+      cards.forEach(function (card) {
+        const toggle = card.querySelector('.toggle');
+        const isActive = toggle.classList.contains('toggle-active');
+        if(currentFilter === 'All') {
+          card.style.display = '';
+        }
+        else if (currentFilter === 'Active' && isActive) {
+          card.style.display = '';
+        }
+        else if (currentFilter === 'Inactive' && !isActive) {
+          card.style.display = '';
+        }
+        else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    btnsFilter.forEach(function (btn) {
+      btn.addEventListener('click', function() {
+        btnsFilter.forEach(function (btnFilter) {
+          btnFilter.classList.remove('btn-filter-active');
+        });
+        btn.classList.add('btn-filter-active');
+        currentFilter = btn.textContent;
+        showCards();
+      });
+    });
+
+    btnsRemove.forEach(function (btnremove) {
+      btnremove.addEventListener('click', function() {
+        const card = btnremove.closest('.extension-card');
+        card.remove();
+      });
+    });
+
+    toggles.forEach(function (toggle) {
+      toggle.addEventListener('click', function() {
+        toggle.classList.toggle('toggle-active');
+        showCards();
+      });
+    });
+  </script>
+</body>
+</html>
